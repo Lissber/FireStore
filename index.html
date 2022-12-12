@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Store</title>
+    <link rel="shortcut icon" href="imagenes/store.ico" image/x-icon">
+    <h1>Fire Store</h1>
+</head>
+
+<body style="padding:0; margin:0;">
+
+    <div class="class-search">
+        <input id="buscar" class="buscar" placeholder="Buscar...">
+        <button id="btn" class="btn">Buscar</button><br>
+        <br>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="tarjetas.html">Tarjetas de Regalo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <br>
+    </div>
+
+    <header style="border:solid 5px red">
+        <section style="padding: 100px 25px;" id="CTA">
+            <div style="display: inline-block; width: 40%;">
+                <h1>Encuentra de todo</h1>
+                <h2>¡Al mejor precio!</h2>
+                <button> <a href="#productos" style="text-decoration-line: none;">
+                        <h1>¡COMPRA AHORA!</h1>
+                    </a></button>
+            </div>
+            <div style="display: inline-block; width: 30%; padding: 5px 20px;">
+                <video src="videos/CBMPAS.mp4" autoplay style="height: 10cm;" controls></video>
+            </div>
+        </section>
+    
+        <div calss="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #08f;"></path>
+            </svg></div>
+    </header>
+
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Nuestro Producto</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="imagenes/About our.jpg" alt="" style="width: 1500px; height: 600px;">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Los mejores productos</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates placeat dignissimos
+                        excepturi ducimus dolore alias laudantium aspernatur. Voluptatum, ex necessitatibus
+                        exercitationem delectus, dicta eveniet magni expedita repudiandae nesciunt eligendi nihil.</p>
+                    <h3><span>1</span>Equipos y Herramientas</h3>
+                    <aside>
+                        <ol>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=QXP0iCczjpw">
+                                    Equipo de extricación 🗓
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=sxNnQk54QoQ">
+                                    Equipo de estabilización 🗓
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=BaMkmQHPbao&t=2s">
+                                    Equipo de primeros auxilios 🗓
+                                </a>
+                            </li>
+                        </ol>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Portafolio</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="imagenes/monja.jpg" alt="" style="width: 250px; height: 230px;">
+                        <img src="imagenes/casco.jpg" alt="" style="width: 250px; height: 230px;">
+                        <img src=" imagenes/epp.jpg" alt="" style="width: 250px; height: 230px;">
+                        <img src="imagenes/guantes.jpg" alt="" style="width: 250px; height: 230px;">
+                        <img src="imagenes/botas.jpg" alt="" style="width: 250px; height: 230px;">
+                        <img src="imagenes/linterna.jpg" alt="" style="width: 250px; height: 230px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="contenet">
+        <div class="contact-formulario">
+            <h3>Regístrate ahora</h3>
+            <form methodo action="">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <p>
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tú Apellido" required
+                            pattern="[A-Za-z]+" />
+                    </p>
+
+                    <p>
+                        <label for="nombre">Nombres</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required
+                            pattern="[A-Za-z]+" />
+                    </p>
+
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required />
+                    </p>
+
+                    <p>
+                        <label for="edad">Edad</label>
+                        <input max="200" min="18" name="edad" type="number" id="edad" placeholder="Escribe tu edad"
+                            required />
+                    </p>
+
+                    <p>
+                        <label for="celular">Celular</label>
+                        <input maxlength="10" type="number" name="celular" id="celular"
+                            placeholder="Escribe tu número celular" required="" pattern="[0-9]+" />
+                    </p>
+
+                    <p class="block">
+                        <label for="direccion">Dirección</label>
+                        <br>
+                        <textarea name="direccion" id="direccion" rows="8" placeholder="Déjanos tú Dirección.."
+                            minlength="100"></textarea>
+                    </p>
+                </fieldset>
+                <p class="button">
+                    <button type="submit">Enviar</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="Finalyy">
+        <h4 class="titulo-final">&copy; Lisbeth Bermeo</h4>
+    </div>
+</footer>
+
+</html>
